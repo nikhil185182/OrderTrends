@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+header{
+    background-color:  #212190;
+}
+li{
+    list-style: none;
+}
+a{ 
+    color:white;
+    text-decoration: None
+}
+.navbar{
+    min-height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.toggler{
+    display:None;
+    cursor: pointer;
+}
+.toggler1{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width:25px;
+    height: 3px;
+    margin:3px;
+    transition:all 0.3s ease-in-out;
+    background-color: white;
+}
+@media (max-width:768px){
+    .toggler{
+        display: block;
+        height: 20px;
+        width: 30px;
+        background-color: rgb(244, 233, 233);
+        align-items: center;
+        align-content: center;
+    }
+    .toggler1{
+        display: none;
+    }
+    .toggler.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .toggler.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .toggler.active .bar:nth-child(3){
+       transform:translateY(-8px) rotate(-45deg);
+    }
+    .nav-item{
+        height: 500px;
+        padding: 30px;
+        margin: 50%;
+        
+        
+    }
+    .nav-menu{
+        position: fixed;
+        
+		height: 50%;
+		width: 100%;
+		display: flex;
+        align-items: center;
+		flex-direction: column;
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        background-color: #1e85bc;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+    .nav-item
+    {
+        margin: 16px 0;
+
+    }
+    .nav-menu.active{
+        left:0;
+    }
+}
+.nav-menu{ 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:60px
+
+}
+.nav-Branding{
+    font-size: 2rem;
+}
+
+.nav-Link:hover{
+    color:rgb(171, 45, 55);
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+tr {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    margin: auto;
+}
+
+.navbarinchart1{
+    min-height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-Brandinginchart1{
+font-size: 2rem;
+}
+
+
+
+
